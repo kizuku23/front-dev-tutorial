@@ -7,7 +7,7 @@ const obj = {
 }
 
 class MyObj {
-  constructor(){
+  constructor() {
     this.first_name = 'Mafia';
     this.last_name = 'Code';
   }
