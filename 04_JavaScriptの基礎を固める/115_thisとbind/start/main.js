@@ -6,7 +6,7 @@ const obj = {
 
         window.setTimeout(function () {
             console.log(this);
-        });
+        }.bind({first_name: 'Taro'}));
     }
 }
 

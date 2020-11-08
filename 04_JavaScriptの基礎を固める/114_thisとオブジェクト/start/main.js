@@ -10,6 +10,12 @@ const obj = {
     }
 }
 
+const window = {
+    printFullName: function(fn) {
+        fn();
+    }
+}
+
 class MyObj {
     constructor() {
         this.first_name = 'Mafia';
