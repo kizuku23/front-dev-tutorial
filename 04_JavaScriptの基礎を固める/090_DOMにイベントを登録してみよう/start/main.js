@@ -16,5 +16,5 @@ function changeBgColor() {
 // btn.addEventListener('click', changeBgColor);
 
 btn.onclick = changeColor;
-btn.onclick = changeBgColor
+btn.onclick = changeBgColor //イベントハンドラは上書きされる
 //btn.removeEventListener('click', changeBgColor);
