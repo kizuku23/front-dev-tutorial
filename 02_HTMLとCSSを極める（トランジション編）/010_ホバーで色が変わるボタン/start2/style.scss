@@ -1,0 +1,23 @@
+$cWhite: white;
+$cBlack: black;
+
+#container {
+  text-align: center;
+}
+
+.btn {
+  margin: 50px 0;
+  padding: 10px 40px;
+  font-weight: bold;
+  background-color: $cWhite;
+  border: solid 1px $cBlack;
+  transition: all .3s;
+  cursor: pointer;
+
+  &:hover {
+    // transition: all .3s; ホバーを外した際の挙動×
+    color: $cWhite;
+    background-color: $cBlack;
+    // cursor: pointer;
+  }
+}
