@@ -19,3 +19,13 @@ $cBlack: black;
     color: $cWhite;
   }
 }
+
+.btn2 {
+  @extend .btn;
+
+  &:hover {
+    background-color: $cWhite;
+    color: $cBlack;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .5);
+  }
+}
