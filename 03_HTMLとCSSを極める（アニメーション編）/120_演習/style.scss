@@ -6,7 +6,8 @@ $cBlack: black;
 }
 
 .btn {
-  margin: 50px auto;
+  display: block;
+  margin: 30px auto;
   padding: 10px 40px;
   background-color: $cWhite;
   border: 1px solid $cBlack;
@@ -14,18 +15,44 @@ $cBlack: black;
   transition: all .3s ease;
   cursor: pointer;
 
-  &:hover {
+  &.float:hover {
     background-color: $cBlack;
     color: $cWhite;
   }
-}
 
-.btn2 {
-  @extend .btn;
-
-  &:hover {
-    background-color: $cWhite;
-    color: $cBlack;
+  &.shadow:hover {
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .5);
+  }
+
+  &.filled {
+    background-color: $cBlack;
+    color: $cWhite;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .5);
+
+    &:hover {
+      background-color: $cWhite;
+      color: $cBlack;
+      box-shadow: none;
+    }
+  }
+
+  &.letter-spacing:hover {
+    @extend .float:hover;
+    letter-spacing: 3px;
+  }
+
+  &.shadow2:hover {
+    box-shadow: 5px 5px 0px 0px;
+    transform: translate(-2.5px, -2.5px);
+  }
+
+  &.solid {
+    box-shadow: 2px 2px 0px 0px;
+    border-radius: 7px;
+
+    &:hover {
+      transform: translate(2px, 2px);
+      box-shadow: none;
+    }
   }
 }
