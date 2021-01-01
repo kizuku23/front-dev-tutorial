@@ -144,7 +144,7 @@
           perspective: 300px;
   width: 150px;
   height: 50px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   cursor: pointer;
 }
 
@@ -184,5 +184,68 @@
 .btn2.cubic:hover .default {
   -webkit-transform: rotateX(-90deg);
           transform: rotateX(-90deg);
+}
+
+.three-dot-spinner {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.three-dot-spinner div {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  -webkit-animation: sk-bouncedelay 1.4s infinite;
+          animation: sk-bouncedelay 1.4s infinite;
+}
+
+.three-dot-spinner .bounce1 {
+  -webkit-animation-delay: -.32s;
+          animation-delay: -.32s;
+}
+
+.three-dot-spinner .bounce2 {
+  -webkit-animation-delay: -.16s;
+          animation-delay: -.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
 }
 /*# sourceMappingURL=style.css.map */
