@@ -1,4 +1,5 @@
 @import "mixin";
+@import 'appear';
 
 $cWhite: white;
 $cBlack: black;
@@ -399,4 +400,8 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+img {
+  max-width: 80%;
 }
